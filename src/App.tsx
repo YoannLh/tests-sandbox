@@ -1,23 +1,9 @@
-import { useState } from 'react' //
+import { Button } from './components/button'
 
 export default function App() {
   return (
-    <div>
+    <div style={{ display: 'flex', width: '100vw' }}>
       <Button />
     </div>
-  )
-}
-
-export function Button() {
-  const [buttonLabel, setButtonLabel] = useState('Se connecter')
-  return (
-    <button
-      style={{ border: '1px solid white' }}
-      onClick={() => {
-        setButtonLabel('Chargement...')
-      }}
-    >
-      {buttonLabel}
-    </button>
   )
 }
